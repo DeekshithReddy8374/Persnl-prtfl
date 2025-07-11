@@ -12,6 +12,20 @@ $breakpoint arguement choices:
 
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
+*/
 *,
 *::after,
 *::before {
@@ -64,9 +78,10 @@ textarea {
 
 .heading-primary {
   font-size: 6rem;
-  text-transform: uppercase;
+  text-transform: initial;
   letter-spacing: 3px;
-  text-align: center; }
+  text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
@@ -184,8 +199,8 @@ textarea {
   display: none; }
 
 .home-hero {
-  color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  color: #ffffff;
+  background: linear-gradient(to right, rgba(0, 20, 31, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -323,7 +338,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(66, 161, 255, 0.8), rgba(55, 68, 80, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -334,7 +349,7 @@ textarea {
     max-width: 80rem;
     text-align: right;
     width: 95%;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 5rem auto 0 auto; }
     @media only screen and (max-width: 37.5em) {
       .contact__form-container {
@@ -608,7 +623,7 @@ textarea {
     border-bottom: 0; }
 
 .main-footer {
-  background: #000;
+  background: #443f3f;
   color: #fff; }
   .main-footer__upper {
     display: flex;
@@ -647,7 +662,9 @@ textarea {
   .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
+    border-radius: 10px;
     color: #eee;
+    background-color: #6d8396;
     font-size: 1.2rem;
     text-align: left;
     text-align: center; }
